@@ -12,8 +12,8 @@ import pandas as pd
 import time
 from io import BytesIO
 import uuid
-from dotenv import load_dotenv,find_dotenv
-from dotenv import dotenv_values
+#from dotenv import load_dotenv,find_dotenv
+#from dotenv import dotenv_values
 import sys
 import dropbox
 from dropbox import DropboxOAuth2FlowNoRedirect
@@ -127,16 +127,16 @@ db=ChatDB()
 conn = db.create_connection()
 db. _create_table()
 #_____________________________________________________________________________
-load_dotenv(find_dotenv())
-#tesu=load_dotenv()
-#st.write(tesu)
-path = "a.env"  #try .path[0] if 1 doesn't work
-load_dotenv(path)
-#config = dotenv_values(".env")
-#st.write(config)
-app_key= os.getenv("APP_KEY")
-app_secret = os.getenv("APP_SECRET")
-access_token=os.getenv("ACCESS_TOKEN")
+# load_dotenv(find_dotenv())
+# #tesu=load_dotenv()
+# #st.write(tesu)
+# path = "a.env"  #try .path[0] if 1 doesn't work
+# load_dotenv(path)
+# #config = dotenv_values(".env")
+# #st.write(config)
+# app_key= os.getenv("APP_KEY")
+# app_secret = os.getenv("APP_SECRET")
+# access_token=os.getenv("ACCESS_TOKEN")
 # Dropbox API credentials
 
 # try:
