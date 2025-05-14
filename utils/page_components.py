@@ -29,9 +29,11 @@ def insert_local_css():
     Injects the local CSS file into the app.
     Replaces the logo and font URL placeholders in the CSS file with base64 encoded versions.
     """
-    with open("data/style.css", "r") as f: 
-        css = f.read()
 
+    css_path = os.path.join(os.path.dirname(__file__), "..", "data", "style.css")
+    with open(css_path, "r") as f:
+        st.markdown(f.read(), unsafe_allow_html=True)
+   
     logo_url = (
         "url(data:image/png;base64,"
         + base64.b64encode(
