@@ -248,7 +248,7 @@ class Lesson(Data):
 
     def get_raw_data(self):
         
-        df = pd.read_csv("data\Opp_teaching_agent.csv",encoding='unicode_escape')
+        df = pd.read_csv("Data\Opp_teaching_agent.csv",encoding='unicode_escape')
 
         return df
 
