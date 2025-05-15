@@ -48,7 +48,7 @@ st.divider()
 
 lesson = Lesson()
 
-with open("data/model cards/model-card-CProgrammingagent.md", 'r',encoding='utf-8') as file:
+with open("Data/model cards/model-card-CProgrammingagent.md", 'r',encoding='utf-8') as file:
     # Read the contents of the file
     model_card_text = file.read()
 
