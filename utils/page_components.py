@@ -45,7 +45,7 @@ def insert_local_css():
     font_url_medium = (
         "url(data:font/otf;base64,"
         + base64.b64encode(
-            Path('data/ressources/fonts/Gilroy-Medium.otf')
+            Path('Data/ressources/fonts/Gilroy-Medium.otf')
             .read_bytes()
         ).decode()
         + ")"
@@ -53,7 +53,7 @@ def insert_local_css():
     font_url_light = (
         "url(data:font/otf;base64,"
         + base64.b64encode(
-            Path('data/ressources/fonts/Gilroy-Light.otf')
+            Path('Data/ressources/fonts/Gilroy-Light.otf')
             .read_bytes()
         ).decode()
         + ")"
@@ -74,7 +74,7 @@ def set_page_config():
     st.set_page_config(
         layout="centered",
         page_title="TwelveGPT Scout",
-        page_icon="data/ressources/img/TwelveEdu.png",
+        page_icon="Data/ressources/img/TwelveEdu.png",
         initial_sidebar_state="expanded",
         menu_items={
             "Report a bug": "mailto:matthias@twelve.football?subject=Bug report"
@@ -83,7 +83,7 @@ def set_page_config():
 
 
 def add_page_selector():
-    #st.image("data/ressources/img/TwelveEdu.png")
+    #st.image("Data/ressources/img/TwelveEdu.png")
     #st.page_link("app.py", label="About")
     #st.page_link("pages/football_scout.py", label="Football Scout")
     #st.page_link("pages/embedder.py", label="Embdedding Tool")
