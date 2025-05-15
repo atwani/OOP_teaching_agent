@@ -37,7 +37,7 @@ def insert_local_css():
     logo_url = (
         "url(data:image/png;base64,"
         + base64.b64encode(
-            Path('data/ressources/img/twelve_logo_light.png')
+            Path('Data/ressources/img/twelve_logo_light.png')
             .read_bytes()
         ).decode()
         + ")"
