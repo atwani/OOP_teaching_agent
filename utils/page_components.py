@@ -30,9 +30,9 @@ def insert_local_css():
     Replaces the logo and font URL placeholders in the CSS file with base64 encoded versions.
     """
 
-    css_path = os.path.join(os.path.dirname(__file__), "..", "data", "style.css")
-    with open(css_path, "r") as f:
-        st.markdown(f.read(), unsafe_allow_html=True)
+    with open("data/style.css", "r") as f: 
+        css = f.read()
+        print(css)
    
     logo_url = (
         "url(data:image/png;base64,"
